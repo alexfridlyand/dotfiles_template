@@ -5,7 +5,10 @@
 - clean: ['~']
 
 - link:
-    ~/.spacemacs: .spacemacs
+    ~/.spacemacs: 
+    ~/.bash_profile: 
+    ~/.gitignore_global:
+
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
