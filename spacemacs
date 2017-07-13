@@ -45,10 +45,7 @@ values."
      ;; better-defaults
      emacs-lisp
      fasd
-     (geolocation :variables
-                  geolocation-enable-automatic-theme-changer t
-                  geolocation-enable-location-service t
-                  geolocation-enable-weather-forecast t)
+     git
      (haskell :variables
               haskell-completion-backend 'intero
               haskell-enable-hindent-style "johan-tibell")
