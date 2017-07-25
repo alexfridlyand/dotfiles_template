@@ -40,4 +40,4 @@ export SCM_CHECK=true
 source $BASH_IT/bash_it.sh
 eval $(/usr/libexec/path_helper -s)
 
-export PATH=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/:$PATH
+export PATH=~/.local/bin:/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/:$PATH
