@@ -19,6 +19,8 @@
     ~/.gitconfig:
       path: gitconfig
 
+    ~/.tmux:
+      path: tmux
     ~/.tmux.conf:
       path: tmux.conf
 
