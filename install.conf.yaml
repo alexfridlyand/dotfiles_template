@@ -1,14 +1,26 @@
 - defaults:
     link:
       relink: true
+      create: true
 
-- clean: ['~']
+- clean:
+    - '~'
+    - ~/.config
+    - ~/.config/fish
 
 - link:
-    ~/.gitignore_global: gitignore_global
-    ~/.gitconfig: gitconfig
+    ~/.config/fish/config.fish:
+      path: fish/config.fish
+    ~/.config/omf:
+      path: omf
 
-    ~/.tmux.conf: tmux.conf
+    ~/.gitignore_global:
+      path: gitignore_global
+    ~/.gitconfig:
+      path: gitconfig
+
+    ~/.tmux.conf:
+      path: tmux.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
