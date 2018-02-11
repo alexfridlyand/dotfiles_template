@@ -5,10 +5,10 @@
 - clean: ['~']
 
 - link:
-    ~/.spacemacs: 
-    ~/.bash_profile: 
-    ~/.gitignore_global:
-    ~/.gitconfig:
+    ~/.gitignore_global: gitignore_global
+    ~/.gitconfig: gitconfig
+
+    ~/.tmux.conf: tmux.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

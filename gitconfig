@@ -1,5 +1,11 @@
-[user]
-	name = Alex Fridlyand
-	email = alex.fridlyand@temzix.com
 [core]
-	excludesfile = /Users/alexfridlyand/.gitignore_global
+    editor = /usr/bin/vim
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+[user]
+    name = Alex Fridlyand
+    email = alex.fridlyand@temzix.com
+[apply]
+    whitespace = fix
+[commit]
+    template = ~/.gitmessage.txt
