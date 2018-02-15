@@ -5,7 +5,7 @@ urxvt.scrollBar_right: true
 urxvt.scrollstyle: plain
 
 !! Font preferences
-urxvt.font: xft:Hack:pixelsize=19:antialias=true
+urxvt.font: xft:Hack:pixelsize=16:antialias=true
 urxvt.letterSpace: -1
 
 !! Cursor
