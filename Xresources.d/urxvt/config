@@ -1,42 +1,42 @@
-Xft.dpi: 96
-Xft.antialias: true
-Xft.hinting: true
-Xft.rgba: rgb
-Xft.autohint: false
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcddefault
-
 !! Appearance
 urxvt.termName: rxvt-unicode-256color
 urxvt.scrollBar: true
-URxvt.scrollBar_right: true
-URxvt.scrollstyle: plain
+urxvt.scrollBar_right: true
+urxvt.scrollstyle: plain
 
-!! Font prefferenes
-URxvt.font: xft:Hack:pixelsize=19:antialias=true
+!! Font preferences
+urxvt.font: xft:Hack:pixelsize=19:antialias=true
 urxvt.letterSpace: -1
 
-! Cursor
-URxvt.cursorBlink: true
-URxvt.cursorUnderline: false
-! Pointer
+!! Cursor
+urxvt.cursorBlink: true
+urxvt.cursorUnderline: false
+!! Pointer
 URxvt.pointerBlank: true
 
 !! Perl extensions
-urxvt.perl-ext-common: default,matcher,font-size, keyboard-select
+URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select
 
-! keyboard-select
+!! keyboard-select
 URxvt.keysym.M-s: perl:keyboard-select:activate
 URxvt.keysym.M-r: perl:keyboard-select:search
 
-!! Open urls in browser with Control-Click
+!! changing font on the fly
+URxvt.keysym.C-Down:  resize-font:smaller
+URxvt.keysym.C-Up:    resize-font:bigger
+
+!! for ctrl+shift to work:
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!! open urls in browser with Control-Click
 urxvt.urlLauncher: /usr/bin/google-chrome
 urxvt.matcher.button: C1
 !! Change font size on Control-Plus/Minus
 URxvt.keysym.Control-0x2b: perl:font-size:increase
 URxvt.keysym.Control-0x2d: perl:font-size:decrease
 
-!! Yeah, I am one of those, who use these keys in Vim :-(
+!! keys in vim
 urxvt.keysym.Home:          \033[1~
 urxvt.keysym.End:           \033[4~
 urxvt.keysym.Control-Up:    \033[1;5A
