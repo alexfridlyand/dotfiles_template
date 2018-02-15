@@ -26,8 +26,8 @@
 
     ~/.Xresources:
       path: Xresources
-    ~/.config/urxvtconfig:
-      path: config/urxvtconfig/config
+    ~/.Xresources.d/urxvt:
+      path: Xresources.d/urxvt
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
