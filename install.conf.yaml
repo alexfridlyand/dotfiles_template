@@ -24,5 +24,10 @@
     ~/.tmux.conf:
       path: tmux.conf
 
+    ~/.Xresources:
+      path: Xresources
+    ~/.config/urxvtconfig:
+      path: config/urxvtconfig/config
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
