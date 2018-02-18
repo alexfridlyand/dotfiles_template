@@ -24,10 +24,18 @@
     ~/.tmux.conf:
       path: tmux.conf
 
+    ~/.xinitrc:
+      path: xinitrc
+
     ~/.Xresources:
       path: Xresources
     ~/.Xresources.d/urxvt:
       path: Xresources.d/urxvt
+
+    ~/.config/i3/config:
+      path: i3/config
+    ~/.config/i3status/config:
+      path: i3status/config
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
