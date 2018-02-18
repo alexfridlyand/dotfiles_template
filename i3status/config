@@ -68,7 +68,7 @@ battery all {
 
 volume master {
         format = "V: %volume"
-        format_muted = "Vm (%volume)"
+        format_muted = "MUTED: (%volume)"
         device = "pulse:1"
         mixer = "Master"
         mixer_idx = 0
