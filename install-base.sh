@@ -1,2 +1,5 @@
 sudo apt install -y curl \
-	            rxvt-unicode-256color
+	            vim \
+	            rxvt-unicode-256color \
+		    tmux \
+		    mosh
