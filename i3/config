@@ -17,7 +17,8 @@ exec --no-startup-id xcape -e 'Caps_Lock=Escape'
 
 set $w1 "1: www"
 set $w2 "2: social"
-set $w3 "3: cmd"
+set $w3 "3: doom"
+set $w4 "4: cmd"
 set $w0 "10: music"
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -45,6 +46,7 @@ new_window none
 
 # start a terminal
 bindsym $mod+t exec urxvt
+bindsym $mod+Shift+e exec i3-msg "workspace $w3"; exec emacs 
 
 # kill focused window
 bindsym $mod+d kill
@@ -117,7 +119,7 @@ bindsym $mod+a focus parent
 bindsym $mod+1 workspace $w1
 bindsym $mod+2 workspace $w2
 bindsym $mod+3 workspace $w3
-bindsym $mod+4 workspace 4
+bindsym $mod+4 workspace $w4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -129,7 +131,7 @@ bindsym $mod+0 workspace $w0
 bindsym $mod+Shift+1 move container to workspace $w1
 bindsym $mod+Shift+2 move container to workspace $w2
 bindsym $mod+Shift+3 move container to workspace $w3
-bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+4 move container to workspace $w4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
@@ -142,7 +144,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -207,6 +209,8 @@ exec_always "setxkbmap -model pc104 -layout us,ru -variant ,, -option grp:win_sp
 # Assign to specific workspaces
 assign [class="Google-chrome" instance="google-chrome"] $w1
 assign [class="Slack"] $w2
+assign [class="Emacs"] $w3
+assign [class="URxvt"] $w4
 
 #Skype
 assign [class="Skype"] $w2
@@ -220,7 +224,8 @@ exec --no-startup-id google-chrome
 exec --no-startup-id slack
 exec --no-startup-id skype
 exec --no-startup-id mailspring
-exec --no-startup-id i3-msg 'workspace $w3; exec urxvt'
+exec --no-startup-id emacs
+exec --no-startup-id urxvt
 exec --no-startup-id rhythmbox
 
 exec bash ~/.config/i3/notifications.sh
