@@ -34,6 +34,8 @@
 
     ~/.config/i3/config:
       path: i3/config
+    ~/.config/i3/notifications.sh:
+      path: i3/notifications.sh
     ~/.config/i3status/config:
       path: i3status/config
 
