@@ -191,7 +191,7 @@ bar {
 }
 
 # Switch lang
-exec_always "setxkbmap -model pc104 -layout us,ru -variant ,, -option grp:alt_shift_toggle"
+exec_always "setxkbmap -model pc104 -layout us,ru -variant ,, -option grp:ctrl_shift_toggle"
 
 # Assign to specific workspaces
 assign [class="Google-chrome" instance="google-chrome"] $w1
