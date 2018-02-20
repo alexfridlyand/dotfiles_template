@@ -1,6 +1,8 @@
 sudo apt install -y curl \
-	            vim \
-		    wmctrl \
+		    xcape \
+		    brightnessctl brightness-udev \
 	            rxvt-unicode-256color \
 		    tmux \
-		    mosh 
+		    mosh \
+	            vim \
+		    wmctrl \
