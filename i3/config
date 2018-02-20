@@ -8,6 +8,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+exec bash ~/.config/i3/volume.sh
 set $mod Mod4
 
 # Remap capslock to ctrl+escape
