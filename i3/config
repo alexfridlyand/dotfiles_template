@@ -45,7 +45,7 @@ workspace_layout tabbed
 new_window none
 
 # start a terminal
-bindsym $mod+t exec urxvt
+bindsym $mod+t exec i3-msg "workspace $w4"; exec urxvt
 bindsym $mod+Shift+e exec i3-msg "workspace $w3"; exec emacs 
 
 # kill focused window
