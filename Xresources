@@ -65,4 +65,6 @@ Emacs.toolBar: 0
 Emacs.menuBar: 0
 Emacs.verticalScrollBars: off
 
+URxvt*.background: blk
+
 #include ".Xresources.d/urxvt/config"
