@@ -1,6 +1,4 @@
 sudo apt install -y emacs
 
-git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
-cd ~/.emacs.d
-cp init.example.el init.el  # maybe edit init.el
-make install
+git clone git@github.com:hlissner/doom-emacs.git -b develop ~/.emacs.d
+git clone git@github.com:alexfridlyand/doom-emacs-private.git ~/.config/doom

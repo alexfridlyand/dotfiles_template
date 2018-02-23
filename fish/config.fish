@@ -5,6 +5,7 @@ set -g theme_color_scheme base16-light
 set -gx TERMINAL urxvt
 
 set -gx XDG_DATA_DIRS /var/lib/snapd/desktop
+set -gx XDG_CONFIG_HOME ~/.config
 
 # start X at login
 if status --is-login

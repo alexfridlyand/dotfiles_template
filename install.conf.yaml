@@ -32,6 +32,9 @@
     ~/.Xresources.d/urxvt:
       path: Xresources.d/urxvt
 
+    ~/.emacs.d/init.el:
+      path: emacs/init.el
+
     ~/.config/i3/config:
       path: i3/config
     ~/.config/i3/notifications.sh:
