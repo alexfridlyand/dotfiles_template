@@ -37,6 +37,8 @@
 
     ~/.config/i3/config:
       path: i3/config
+    ~/.config/i3/workspace-2.json:
+      path: i3/workspace-2.json
     ~/.config/i3/notifications.sh:
       path: i3/notifications.sh
     ~/.config/i3/volume.sh:

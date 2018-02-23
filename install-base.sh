@@ -1,4 +1,5 @@
 sudo apt install -y curl \
+	            htop \
 		    xcape \
 		    brightnessctl brightness-udev \
 		    wmctrl \
