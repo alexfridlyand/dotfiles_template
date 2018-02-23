@@ -5,3 +5,4 @@ bash install-i3.sh
 bash install-snaps.sh
 bash install-vim.sh
 bash install-emacs.sh
+bash install-twitter.sh
