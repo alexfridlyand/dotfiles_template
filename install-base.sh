@@ -6,5 +6,3 @@ sudo apt install -y curl \
 sudo apt install -y rxvt-unicode-256color \
 		    tmux \
 		    mosh \
-                    vim \
-	            emacs \
