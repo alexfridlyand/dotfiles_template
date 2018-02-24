@@ -8,7 +8,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# Volume settings
 exec bash ~/.config/i3/volume.sh
+
 set $mod Mod4
 
 # Remap capslock to ctrl+escape
@@ -39,8 +41,8 @@ workspace_layout tabbed
 new_window none
 
 # start a terminal
-bindsym $mod+t exec i3-msg "workspace 3"; exec urxvt
-bindsym $mod+Shift+e exec i3-msg "workspace 3"; exec emacs 
+bindsym $mod+t exec exec urxvt
+bindsym $mod+Shift+e exec emacs
 
 # kill focused window
 bindsym $mod+d kill
