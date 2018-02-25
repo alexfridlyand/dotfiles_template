@@ -4,7 +4,7 @@ URxvt*.scrollBar: false
 URxvt*.depth: 32
 
 !! Font preferences
-URxvt*font:xft:Ubuntu Mono derivative Powerline:size=13
+URxvt*font:xft:Ubuntu Mono derivative Powerline:size=14
 URxvt*.letterSpace: -1
 
 !! Cursor
