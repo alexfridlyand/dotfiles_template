@@ -1,0 +1,18 @@
+#!/bin/bash
+## This file is sourced by some DM and should not contain any desktop execution.
+
+## X resources for xterm, rxvt et al.
+## Some DM merge this automatically; merge it for manual logins.
+[ -f "$HOME/.Xresources" ] && xrdb -merge "$HOME/.Xresources"
+
+
+# Remap capslock to ctrl+escape
+setxkbmap -option 'caps:ctrl_modifier'
+xcape -e 'Caps_Lock=Escape'
+
+numlockx on
+
+start-pulseaudio-x11 &
+gnome-settings-daemon & # fonts and stuff
+gnome-screensaver & # for the lock-screen
+nm-applet &

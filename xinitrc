@@ -1,2 +1,25 @@
-xrdb -merge -I$HOME ~/.Xresources
-exec i3
+#!/bin/bash
+
+## WARNING: If started from TTY on a multi-seat, the user must run 'startx &
+## vlock' to ensure the X locker cannot be bypassed.
+
+# Disable access control
+xhost +SI:localuser:$USER
+
+# Make Java applications aware this is a non-reparenting window manager.
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+## Source environment config.
+[ -f ~/.xprofile ] && . ~/.xprofile
+
+## Launch session
+if [ $# -eq 1 ] && command -v $1 >/dev/null 2>&1; then
+	exec $1
+else
+	## conky | dzen2 -p -dock -ta l -fn "Hack" &
+	## `exwm-enable' has to be called before the frame is spawned.
+	emacs --daemon -f exwm-enable
+	exec emacsclient -c
+fi
+
+

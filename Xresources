@@ -13,5 +13,6 @@ Xcursor.theme: default
 Emacs.toolBar: 0
 Emacs.menuBar: 0
 Emacs.verticalScrollBars: off
+Emacs.fullscreen: maximized
 
 #include ".Xresources.d/urxvt/config"

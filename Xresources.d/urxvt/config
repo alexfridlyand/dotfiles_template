@@ -4,11 +4,10 @@ URxvt*.scrollBar: false
 URxvt*.depth: 32
 
 !! Font preferences
-URxvt*.font: xft:Hack:pixelsize=16:antialias=true
+URxvt*font:xft:DejaVu Sans Mono for Powerline:pixelsize=16
 URxvt*.letterSpace: -1
 
 !! Cursor
-URxvt*.cursorBlink: true
 URxvt*.cursorBlink: true
 URxvt*.underlineColor: grey
 !! Pointer

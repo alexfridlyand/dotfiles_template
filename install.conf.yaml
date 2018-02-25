@@ -28,6 +28,8 @@
 
     ~/.xinitrc:
       path: xinitrc
+    ~/.xprofile:
+      path: xprofile
 
     ~/.Xresources:
       path: Xresources
