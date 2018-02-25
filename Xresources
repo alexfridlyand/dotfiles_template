@@ -10,8 +10,7 @@ Xft.lcdfilter: lcddefault
 Xcursor.theme: default
 
 ! emacs
-Emacs.fontBackend: xft, x
-Emacs.font: DejaVu Sans Mono for Powerline:size=16
+Emacs.font: DejaVu Sans Mono for Powerline-13
 Emacs.toolBar: 0
 Emacs.menuBar: 0
 Emacs.verticalScrollBars: off

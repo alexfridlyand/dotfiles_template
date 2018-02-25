@@ -4,7 +4,7 @@ URxvt*.scrollBar: false
 URxvt*.depth: 32
 
 !! Font preferences
-URxvt*font:xft:DejaVu Sans Mono for Powerline:pixelsize=16
+URxvt*font:xft:DejaVu Sans Mono for Powerline:size=13
 URxvt*.letterSpace: -1
 
 !! Cursor
