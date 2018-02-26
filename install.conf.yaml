@@ -36,9 +36,6 @@
     ~/.Xresources.d/urxvt:
       path: Xresources.d/urxvt
 
-    ~/.emacs.d/init.el:
-      path: emacs/init.el
-
     ~/.config/i3:
       path: i3
     ~/.config/i3status/config:
