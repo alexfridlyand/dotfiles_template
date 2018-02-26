@@ -9,11 +9,4 @@ Xft.lcdfilter: lcddefault
 ! cursor
 Xcursor.theme: default
 
-! emacs
-Emacs.font: DejaVu Sans Mono for Powerline-12
-Emacs.toolBar: 0
-Emacs.menuBar: 0
-Emacs.verticalScrollBars: off
-Emacs.fullscreen: maximized
-
 #include ".Xresources.d/urxvt/config"
