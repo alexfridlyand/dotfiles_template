@@ -4,7 +4,7 @@ URxvt*.scrollBar: false
 URxvt*.depth: 32
 
 !! Font preferences
-URxvt*font:xft:Hack:size=14
+URxvt*font:xft:PragmataPro for Powerline:size=14
 URxvt*.letterSpace: -1
 
 !! Cursor
