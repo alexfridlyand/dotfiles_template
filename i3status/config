@@ -35,15 +35,15 @@ cpu_usage {
 }
 
 disk "/" {
-        format = "r: %avail"
+        format = "R: %avail"
 }
 
 disk "/home" {
-        format = " %avail"
+        format = "H: %avail"
 }
 
 wireless _first_ {
-        format_up = "%quality, %essid: %ip"
+        format_up = "W:%quality, %essid: %ip"
         format_down = ""
 }
 
@@ -67,13 +67,13 @@ battery all {
 }
 
 volume master {
-        format = " %volume"
-        format_muted = " (%volume)"
+        format = "V: %volume"
+        format_muted = "V(OFF): (%volume)"
         device = "pulse"
         mixer = "Master"
         mixer_idx = 0
 }
 
 tztime local {
-        format = "%Y-%m-%d %l:%M %p"
+        format = "%Y-%m-%d%l:%M%p"
 }
