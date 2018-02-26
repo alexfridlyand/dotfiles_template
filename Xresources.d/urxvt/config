@@ -4,7 +4,7 @@ URxvt*.scrollBar: false
 URxvt*.depth: 32
 
 !! Font preferences
-URxvt*font:xft:Inconsolata for Powerline:size=14
+URxvt*font:xft:Hack:size=14
 URxvt*.letterSpace: -1
 
 !! Cursor
@@ -45,30 +45,30 @@ URxvt*.keysym.Control-Down:  \033[1;5B
 URxvt*.keysym.Control-Left:  \033[1;5D
 URxvt*.keysym.Control-Right: \033[1;5C
 
-! Jellybeans Terminal Colours
-urxvt.background: #151515
-urxvt.foreground: #ffffff
+! colors
+URxvt.foreground: #424242
+URxvt.background: #FFFFE8
 ! black
-urxvt.color0: #888888
-urxvt.color8: #525252
+URxvt.color0: #424242
+URxvt.color8: #988D6D
 ! red
-urxvt.color1: #cf6a4c
-urxvt.color9: #ff9d80
+URxvt.color1: #B85C57
+URxvt.color9: #B85C57
 ! green
-urxvt.color2: #99ad6a
-urxvt.color10: #c3e6ad
+URxvt.color2: #40883F
+URxvt.color10: #40883F
 ! yellow
-urxvt.color3: #fad07a
-urxvt.color11: #ffefbf
+URxvt.color3: #989848
+URxvt.color11: #F8FCE8
 ! blue
-urxvt.color4: #8197bf
-urxvt.color12: #accaff
+URxvt.color4: #0287C8
+URxvt.color12: #0287C8
 ! magenta
-urxvt.color5: #8787af
-urxvt.color13: #c4c4ff
+URxvt.color5: #8888C8
+URxvt.color13: #E7FCF7
 ! cyan
-urxvt.color6: #8fbfdc
-urxvt.color14: #80bfaf
+URxvt.color6: #4FA8A8
+URxvt.color14: #98ECE8
 ! white
-urxvt.color7: #888888
-urxvt.color15: #e8e8d3
+URxvt.color7: #FFFFD8
+URxvt.color15: #E5E5D0
