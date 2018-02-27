@@ -9,4 +9,4 @@ Xft.lcdfilter: lcddefault
 ! cursor
 Xcursor.theme: default
 
-#include ".Xresources.d/urxvt/config"
+#include "urxvt.conf"
