@@ -9,6 +9,9 @@
     - ~/.config/fish
 
 - link:
+    ~/.local/share/fonts/PragmataPro:
+      path: fonts/PragmataPro
+
     ~/.config/fish/config.fish:
       path: fish/config.fish
     ~/.config/fish/aliases.fish:
@@ -27,8 +30,12 @@
       path: Xorg/xprofile
     ~/.Xresources:
       path: Xorg/Xresources
+    /usr/bin/xinitrcsession-helper:
+      path: Xorg/xinit-xsession/xinitrcsession-helper
+    /usr/share/xsessions/xinitrc.desktop:
+      path: Xorg/xinit-xsession/xinitrc.desktop
 
-    ~/urxvt.conf:
+    ~/.urxvt.conf:
       path: urxvt.conf
 
     ~/.config/i3:
