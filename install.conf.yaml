@@ -3,10 +3,7 @@
       relink: true
       create: true
 
-- clean:
-    - '~'
-    - ~/.config
-    - ~/.config/fish
+- clean: [ '~', '~/.config', '~/.config/fish', '~/.local/share/fonts' ]
 
 - link:
     ~/.local/share/fonts/PragmataPro:
@@ -30,10 +27,6 @@
       path: Xorg/xprofile
     ~/.Xresources:
       path: Xorg/Xresources
-    /usr/bin/xinitrcsession-helper:
-      path: Xorg/xinit-xsession/xinitrcsession-helper
-    /usr/share/xsessions/xinitrc.desktop:
-      path: Xorg/xinit-xsession/xinitrc.desktop
 
     ~/.urxvt.conf:
       path: urxvt.conf
