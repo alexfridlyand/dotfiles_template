@@ -17,24 +17,19 @@
       path: omf
 
     ~/.gitignore_global:
-      path: gitignore_global
+      path: git/gitignore_global
     ~/.gitconfig:
-      path: gitconfig
-
-    ~/.tmux:
-      path: tmux
-    ~/.tmux.conf:
-      path: tmux.conf
+      path: git/gitconfig
 
     ~/.xinitrc:
-      path: xinitrc
+      path: Xorg/xinitrc
     ~/.xprofile:
-      path: xprofile
-
+      path: Xorg/xprofile
     ~/.Xresources:
-      path: Xresources
-    ~/.Xresources.d/urxvt:
-      path: Xresources.d/urxvt
+      path: Xorg/Xresources
+
+    ~/urxvt.conf:
+      path: urxvt.conf
 
     ~/.config/i3:
       path: i3
