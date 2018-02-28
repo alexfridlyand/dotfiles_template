@@ -13,9 +13,5 @@ xcape -e 'Caps_Lock=Escape'
 numlockx on
 
 start-pulseaudio-x11 &
-# Reset audio so jack is working after reboot
-vol=$(awk '/%/ {gsub(/[\[\]]/,""); print $4}' <(amixer sget Master))
-/usr/sbin/alsactl restore
-exec amixer -q set Master $vol
 
 nm-applet &
