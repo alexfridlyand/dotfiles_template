@@ -14,7 +14,7 @@ set -gx VISUAL "$EDITOR"
 set -gx XDG_DATA_DIRS /var/lib/snapd/desktop /usr/share/gnome
 set -gx XDG_CONFIG_HOME ~/.config
 
-bash ~/.config/fish/volume.sh
+# bash ~/.config/fish/volume.sh
 
 # start X at login
 if status --is-login
