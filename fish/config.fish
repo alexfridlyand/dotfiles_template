@@ -14,10 +14,7 @@ set -gx VISUAL "$EDITOR"
 set -gx XDG_DATA_DIRS /var/lib/snapd/desktop /usr/share/gnome
 set -gx XDG_CONFIG_HOME ~/.config
 
-# Reset audio so jack is working after reboot
-vol=$(awk '/%/ {gsub(/[\[\]]/,""); print $4}' <(amixer sget Master))
-/usr/sbin/alsactl restore
-amixer -q set Master $vol
+bash ~/.config/fish/volume.sh
 
 # start X at login
 if status --is-login
