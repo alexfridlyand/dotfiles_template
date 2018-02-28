@@ -13,6 +13,8 @@
       path: fish/config.fish
     ~/.config/fish/aliases.fish:
       path: fish/aliases.fish
+    ~/.config/fish/color_scheme.fish:
+      path: fish/color_scheme.fish
     ~/.config/omf:
       path: omf
 
