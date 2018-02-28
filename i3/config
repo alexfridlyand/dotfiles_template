@@ -188,9 +188,6 @@ bar {
         status_command i3status
 }
 
-# Switch lang
-exec_always "setxkbmap -model pc104 -layout us,ru -variant ,, -option grp:win_space_toggle"
-
 # Assign to specific workspaces
 assign [class="Google-chrome" instance="google-chrome"] 1
 assign [class="Slack"] 2

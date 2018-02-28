@@ -23,6 +23,7 @@ sudo ln -sf ${BASEDIR}/Xorg/xinit-xsession/xinitrc.desktop /usr/share/xsessions/
 sudo apt install -y brightnessctl brightness-udev \
 		    emacs \
 		    i3 \
+		    ibus \
 		    pulsemixer \
 		    suckless-tools \
 	            corebird \
