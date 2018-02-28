@@ -6,6 +6,7 @@
 # Disable access control
 xhost +SI:localuser:$USER
 
+# EXWM
 # Make Java applications aware this is a non-reparenting window manager.
 export _JAVA_AWT_WM_NONREPARENTING=1
 

@@ -5,14 +5,17 @@
 ## Some DM merge this automatically; merge it for manual logins.
 [ -f "$HOME/.Xresources" ] && xrdb -merge "$HOME/.Xresources"
 
+# Reset audio so jack is working after reboot
+vol=$(awk '/%/ {gsub(/[\[\]]/,""); print $4}' <(amixer sget Master))
+/usr/sbin/alsactl restore
+exec amixer -q set Master $vol
 
 # Remap capslock to ctrl+escape
 setxkbmap -option 'caps:ctrl_modifier'
 xcape -e 'Caps_Lock=Escape'
 
+# Enable numlock
 numlockx on
 
 start-pulseaudio-x11 &
-gnome-settings-daemon & # fonts and stuff
-gnome-screensaver & # for the lock-screen
 nm-applet &

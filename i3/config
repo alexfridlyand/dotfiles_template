@@ -8,14 +8,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# Volume settings
-exec bash ~/.config/i3/volume.sh
-
 set $mod Mod4
-
-# Remap capslock to ctrl+escape
-exec --no-startup-id setxkbmap -option 'caps:ctrl_modifier'
-exec --no-startup-id xcape -e 'Caps_Lock=Escape'
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -181,10 +174,10 @@ bindsym XF86MonBrightnessUp     exec "brightnessctl set +10%"
 bindsym XF86MonBrightnessDown   exec "brightnessctl set 10%-"
 
 # Print screen focused window
-bindsym Print exec scrot -u '%Y%m%d_%H%M%S.png' -e 'mv $f ~/Pictures/shots/'
+bindsym Print exec scrot -u '%Y%m%d_%H%M%S.png'
 
 # Print screen entire view
-bindsym $mod+Print exec scrot '%Y%m%d_%Ho%M%S.png' -e 'mv $f ~/Pictures/shots/'
+bindsym $mod+Print exec scrot '%Y%m%d_%Ho%M%S.png'
 
 bindsym XF86Calculator exec gnome-calculator
 

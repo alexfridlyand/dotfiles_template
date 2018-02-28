@@ -29,7 +29,9 @@ sudo apt install -y brightnessctl brightness-udev \
                     curl \
                     htop \
                     mosh \
+		    numlockx
                     rxvt-unicode-256color \
+		    scrot
                     tmux \
                     wmctrl \
                     xcape \
