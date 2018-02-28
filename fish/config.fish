@@ -1,5 +1,7 @@
 . ~/.config/fish/aliases.fish
-
+# color scheme for fish itself
+. ~/.config/fish/color_scheme.fish
+# color scheme for omf
 . ~/.config/omf/color_scheme.fish
 
 set -g theme_display_k8s_context no
