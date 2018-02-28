@@ -21,14 +21,15 @@ sudo ln -sf ${BASEDIR}/Xorg/xinit-xsession/xinitrc.desktop /usr/share/xsessions/
 
 # Install core
 sudo apt install -y brightnessctl brightness-udev \
+		    emacs \
+		    i3 \
+		    pulsemixer \
+		    suckless-tools \
 	            corebird \
                     curl \
-		    emacs \
                     htop \
-		    i3 \
                     mosh \
                     rxvt-unicode-256color \
-		    suckless-tools \
                     tmux \
                     wmctrl \
                     xcape \
