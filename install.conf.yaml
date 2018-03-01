@@ -15,8 +15,6 @@
       path: fish/aliases.fish
     ~/.config/fish/color_scheme.fish:
       path: fish/color_scheme.fish
-    ~/.config/fish/volume.sh:
-      path: fish/volume.sh
     ~/.config/omf:
       path: omf
 
