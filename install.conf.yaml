@@ -23,6 +23,9 @@
     ~/.gitconfig:
       path: git/gitconfig
 
+    ~/.vimrc:
+      path: vimrc
+
     ~/.xinitrc:
       path: Xorg/xinitrc
     ~/.xprofile:
