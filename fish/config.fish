@@ -14,11 +14,10 @@ set -gx VISUAL "$EDITOR"
 set -gx XDG_DATA_DIRS /var/lib/snapd/desktop /usr/share/gnome
 set -gx XDG_CONFIG_HOME ~/.config
 
-# bash ~/.config/fish/volume.sh
-
 # start X at login
 if status --is-login
     if test -z "$DISPLAY" -a $XDG_VTNR = 1
         exec startx
     end
+    bash ~/.config/fish/volume.sh
 end
