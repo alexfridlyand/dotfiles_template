@@ -53,4 +53,4 @@ snap install slack --classic
 snap install mailspring
 
 # Install emacs config
-git -C ~/.emacs.d pull || git clone git@github.com:alexfridlyand/.emacs.d.git ~/.emacs.d
+git -C ~/.emacs.d pull || git clone -b develop git@github.com:syl20bnr/spacemacs.git ~/.emacs.d

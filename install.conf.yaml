@@ -25,6 +25,8 @@
 
     ~/.vimrc:
       path: vimrc
+    ~/.spacemacs:
+      path: spacemacs
 
     ~/.xinitrc:
       path: Xorg/xinitrc
