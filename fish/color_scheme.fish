@@ -1,1 +1,1 @@
-set fish_color_operator brblack
+#set fish_color_operator brblack
