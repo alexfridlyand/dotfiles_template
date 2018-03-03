@@ -12,7 +12,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: Hack 10
+font pango: PragmataPro for Powerline 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -38,13 +38,16 @@ bindsym $mod+t exec exec urxvt
 bindsym $mod+Shift+e exec emacs
 
 # kill focused window
-bindsym $mod+Shift+d kill
+bindsym $mod+Shift+q kill
 
 # set up screen lock
 bindsym $mod+Ctrl+l exec i3lock -c 000000
 
 # start dmenu (a program launcher)
 bindsym $mod+semicolon exec i3-dmenu-desktop
+
+# start browser
+bindsym $mod+backslash exec google-chrome
 
 # change focus
 bindsym $mod+h focus left
@@ -74,11 +77,8 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # These are more like the tmux config we will get to later, but are intuitive
-bindsym $mod+backslash  split horizontal
-bindsym $mod+bar        split horizontal
-bindsym $mod+apostrophe split vertical
-bindsym $mod+quotedbl   split vertical
-bindsym $mod+minus      split vertical
+bindsym $mod+slash split horizontal
+bindsym $mod+minus split vertical
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -129,7 +129,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+BackSpace exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

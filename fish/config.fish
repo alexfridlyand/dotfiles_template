@@ -1,6 +1,6 @@
 . ~/.config/fish/aliases.fish
 
-set -g theme_color_scheme solarized-light
+set -g theme_color_scheme solarized
 
 # color scheme for fish itself
 . ~/.config/fish/color_scheme.fish
@@ -9,7 +9,9 @@ set -g theme_color_scheme solarized-light
 #. ~/.config/omf/color_scheme.fish
 
 set -g theme_display_k8s_context no
+set -g theme_show_exit_status yes
 set -g theme_newline_cursor yes
+set -g fish_prompt_pwd_dir_length 0
 
 set -gx TERMINAL urxvt
 set -gx EDITOR "emacsclient -a ''"

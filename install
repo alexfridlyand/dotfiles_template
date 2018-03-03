@@ -13,9 +13,10 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 
-# Install powerline fonts
-git -C fonts pull || git clone https://github.com/powerline/fonts.git --depth=1
-bash fonts/install.sh
+# Install fonts
+git -C fonts pull || git clone git@github.com:alexfridlyand/personal-fonts.git fonts
+mkdir -p ~/.local/share/fonts
+cp -r fonts/* ~/.local/share/fonts/
 
 sudo apt install -y \
         brightnessctl brightness-udev \
