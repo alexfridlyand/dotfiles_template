@@ -6,9 +6,6 @@
 - clean: [ '~', '~/.config', '~/.config/fish', '~/.local/share/fonts' ]
 
 - link:
-    ~/.local/share/fonts/PragmataPro:
-      path: fonts/PragmataPro
-
     ~/.config/fish/config.fish:
       path: fish/config.fish
     ~/.config/fish/aliases.fish:

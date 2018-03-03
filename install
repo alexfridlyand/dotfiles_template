@@ -11,30 +11,28 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
-# Install fonts
-git -C fonts pull || git clone git@github.com:alexfridlyand/personal-fonts.git fonts
-
-sudo ln -sf ${BASEDIR}/Xorg/xinit-xsession/xinitrcsession-helper /bin/xinitrcsession-helper 
-sudo ln -sf ${BASEDIR}/Xorg/xinit-xsession/xinitrc.desktop /usr/share/xsessions/xinitrc.desktop
-
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 
-# Install core
-sudo apt install -y brightnessctl brightness-udev \
-		    emacs \
-		    i3 \
-		    pulsemixer \
-		    suckless-tools \
-	            corebird \
-                    curl \
-                    htop \
-                    mosh \
-		    numlockx \
-                    rxvt-unicode-256color \
-		    scrot \
-                    tmux \
-                    wmctrl \
-                    xcape \
+# Install powerline fonts
+git -C fonts pull || git clone https://github.com/powerline/fonts.git --depth=1
+bash fonts/install.sh
+
+sudo apt install -y \
+        brightnessctl brightness-udev \
+		emacs \
+		i3 \
+		pulsemixer \
+		suckless-tools \
+	    corebird \
+        curl \
+        htop \
+        mosh \
+		numlockx \
+        rxvt-unicode-256color \
+		scrot \
+        tmux \
+        wmctrl \
+        xcape \
 
 # Install fish
 sudo apt install -y fish
@@ -44,6 +42,9 @@ printf "$(curl -L https://get.oh-my.fish)\nexit" > omf/install
 fish omf/install -y --noninteractive
 rm -rf omf/install
 
+# Install emacs config
+git -C ~/.emacs.d pull || git clone -b develop git@github.com:syl20bnr/spacemacs.git ~/.emacs.d
+
 # Install snaps
 sudo apt install snapd
 sudo snap login
@@ -51,6 +52,3 @@ sudo snap login
 snap install skype --classic
 snap install slack --classic
 snap install mailspring
-
-# Install emacs config
-git -C ~/.emacs.d pull || git clone -b develop git@github.com:syl20bnr/spacemacs.git ~/.emacs.d
