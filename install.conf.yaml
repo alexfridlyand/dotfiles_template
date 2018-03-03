@@ -20,6 +20,8 @@
     ~/.gitconfig:
       path: git/gitconfig
 
+    ~/.vimrc:
+      path: vimrc
     ~/.spacemacs:
       path: spacemacs
 
