@@ -32,6 +32,7 @@ sudo apt install -y \
         rxvt-unicode-256color \
 		scrot \
         tmux \
+	vlc \
         wmctrl \
         xcape \
 
@@ -44,7 +45,7 @@ fish omf/install -y --noninteractive
 rm -rf omf/install
 
 # Install emacs config
-git -C ~/.emacs.d pull || git clone -b develop git@github.com:syl20bnr/spacemacs.git ~/.emacs.d
+git -C ~/.emacs.d pull --rebase || git clone -b develop git@github.com:syl20bnr/spacemacs.git ~/.emacs.d
 
 # Install snaps
 sudo apt install snapd
