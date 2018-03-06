@@ -26,6 +26,7 @@ sudo apt install -y \
 		suckless-tools \
 	    corebird \
         curl \
+	fasd \
         htop \
         mosh \
 		numlockx \
