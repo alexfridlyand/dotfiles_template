@@ -14,7 +14,7 @@ set -g theme_newline_cursor yes
 set -g fish_prompt_pwd_dir_length 0
 
 set -gx TERMINAL urxvt
-set -gx EDITOR "emacsclient -a ''"
+set -gx EDITOR "vim"
 set -gx VISUAL "$EDITOR"
 
 set -gx XDG_DATA_DIRS /var/lib/snapd/desktop /usr/share/gnome
