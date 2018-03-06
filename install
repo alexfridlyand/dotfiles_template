@@ -51,6 +51,7 @@ git -C ~/.emacs.d pull --rebase || git clone -b develop git@github.com:syl20bnr/
 sudo apt install snapd
 sudo snap login
 
+snap install rg
 snap install skype --classic
 snap install slack --classic
 snap install mailspring
