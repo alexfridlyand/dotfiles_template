@@ -2,7 +2,7 @@ alias sc systemctl
 alias jc journalctl
 alias ssc 'sudo systemctl'
 
-alias e "emacsclient -n"
+alias e "emacsclient"
 
 alias reboot 'sudo systemctl reboot'
 alias shutdown 'sudo systemctl poweroff'
