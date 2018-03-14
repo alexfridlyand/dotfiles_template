@@ -6,5 +6,5 @@
     email = alex.fridlyand@temzix.com
 [apply]
     whitespace = fix
-[commit]
-    template = ~/.gitmessage.txt
+#[commit]
+#    template = ~/.gitmessage.txt
