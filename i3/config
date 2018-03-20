@@ -34,7 +34,7 @@ workspace_layout tabbed
 new_window none
 
 # start a terminal
-bindsym $mod+t exec exec urxvt
+bindsym $mod+t exec urxvt
 bindsym $mod+Shift+e exec emacs
 
 # kill focused window
@@ -192,28 +192,13 @@ bar {
 exec_always "setxkbmap -model pc104 -layout us,ru -variant ,, -option grp:win_space_toggle"	
 
 # Assign to specific workspaces
-assign [class="Google-chrome" instance="google-chrome"] 1
-assign [class="Slack"] 0
 assign [class="Emacs"] 2
-assign [class="URxvt"] 3
-
-#Skype
-assign [class="Skype"] 0
-for_window [class="Skype"] tabbed
-
-assign [class="Mailspring"] 0
 
 exec --no-startup-id "i3-msg 'workspace 0; append_layout ~/.config/i3/workspace-social.json'"
-
-# Automatically starting applications on i3 startup
+exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-1.json'"
+exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.config/i3/workspace-3.json'"
 exec --no-startup-id google-chrome
-exec --no-startup-id slack
-exec --no-startup-id skype
-exec --no-startup-id mailspring
-exec --no-startup-id emacs
-exec --no-startup-id urxvt
 exec --no-startup-id corebird
 
-exec bash ~/.config/i3/notifications.sh
-
-exec --no-startup-id i3-msg 'workspace 0'
+# Automatically starting applications on i3 startup
+exec --no-startup-id emacs

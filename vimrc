@@ -1,3 +1,4 @@
+set encoding=utf-8
 set nocompatible
 
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -14,7 +15,6 @@ if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
 endif
 
 " My plugins
-Plug 'vim-airline/vim-airline'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-sensible'
 call plug#end()
