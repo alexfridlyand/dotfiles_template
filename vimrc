@@ -1,5 +1,6 @@
 set encoding=utf-8
 set nocompatible
+syntax enable
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -15,14 +16,5 @@ if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
 endif
 
 " My plugins
-Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-sensible'
 call plug#end()
-
-syntax enable
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
-colorscheme solarized

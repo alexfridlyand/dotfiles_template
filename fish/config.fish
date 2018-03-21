@@ -1,9 +1,9 @@
 . ~/.config/fish/aliases.fish
 
-set -g theme_color_scheme solarized
+set -g theme_color_scheme dark
 
 # color scheme for fish itself
-. ~/.config/fish/color_scheme.fish
+#. ~/.config/fish/color_scheme.fish
 
 # color scheme for omf
 #. ~/.config/omf/color_scheme.fish

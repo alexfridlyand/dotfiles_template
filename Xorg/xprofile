@@ -3,7 +3,7 @@
 
 ## X resources for xterm, rxvt et al.
 ## Some DM merge this automatically; merge it for manual logins.
-[ -f "$HOME/.Xresources" ] && xrdb -DSOLARIZED_DARK -merge "$HOME/.Xresources"
+[ -f "$HOME/.Xresources" ] && xrdb -merge "$HOME/.Xresources"
 
 # Remap capslock to ctrl+escape
 setxkbmap -option 'caps:ctrl_modifier'
