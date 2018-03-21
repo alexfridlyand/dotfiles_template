@@ -9,6 +9,7 @@ set -g theme_color_scheme dark
 #. ~/.config/omf/color_scheme.fish
 
 set -g theme_display_k8s_context no
+set -g theme_display_git_master_branch yes
 set -g theme_show_exit_status yes
 set -g theme_newline_cursor yes
 set -g fish_prompt_pwd_dir_length 0
