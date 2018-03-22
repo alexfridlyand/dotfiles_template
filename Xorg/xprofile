@@ -12,10 +12,6 @@ xcape -e 'Caps_Lock=Escape'
 # Enable numlock
 numlockx on
 
-start-pulseaudio-x11 &
-
 nm-applet &
 
-# solving jack doesn't work after reboot
-# some parts fail but works to solve this problem
-bash ~/dotfiles/volume.sh || true
+pactl set-sink-port 0 analog-output-headphones

@@ -199,6 +199,6 @@ exec --no-startup-id "i3-msg 'workspace 1; append_layout ~/.config/i3/workspace-
 exec --no-startup-id "i3-msg 'workspace 3; append_layout ~/.config/i3/workspace-3.json'"
 exec --no-startup-id google-chrome
 exec --no-startup-id corebird
-
-# Automatically starting applications on i3 startup
 exec --no-startup-id emacs
+
+exec bash ~/.config/i3/notifications.sh
