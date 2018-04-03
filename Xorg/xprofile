@@ -3,15 +3,15 @@
 
 ## X resources for xterm, rxvt et al.
 ## Some DM merge this automatically; merge it for manual logins.
-[ -f "$HOME/.Xresources" ] && xrdb -merge "$HOME/.Xresources"
+##[ -f "$HOME/.Xresources" ] && xrdb -merge "$HOME/.Xresources"
 
 # Remap capslock to ctrl+escape
 setxkbmap -option 'caps:ctrl_modifier'
 xcape -e 'Caps_Lock=Escape'
 
 # Enable numlock
-numlockx on
+#numlockx on
 
-nm-applet &
+#nm-applet &
 
-pactl set-sink-port 0 analog-output-headphones
+#pactl set-sink-port 0 analog-output-headphones

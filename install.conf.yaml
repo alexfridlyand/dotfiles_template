@@ -14,5 +14,8 @@
     ~/.vimrc:
       path: vimrc
 
+    ~/.xprofile:
+      path: Xorg/xprofile
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
