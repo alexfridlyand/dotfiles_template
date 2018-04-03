@@ -13,6 +13,8 @@
 
     ~/.vimrc:
       path: vimrc
+    ~/.spacemacs:
+      path: spacemacs
 
     ~/.xprofile:
       path: Xorg/xprofile
