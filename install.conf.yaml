@@ -3,18 +3,9 @@
       relink: true
       create: true
 
-- clean: [ '~', '~/.config', '~/.config/fish', '~/.local/share/fonts' ]
+- clean: [ '~', '~/.config' ]
 
 - link:
-    ~/.config/fish/config.fish:
-      path: fish/config.fish
-    ~/.config/fish/aliases.fish:
-      path: fish/aliases.fish
-    ~/.config/fish/color_scheme.fish:
-      path: fish/color_scheme.fish
-    ~/.config/omf:
-      path: omf
-
     ~/.gitignore_global:
       path: git/gitignore_global
     ~/.gitconfig:
@@ -22,21 +13,6 @@
 
     ~/.vimrc:
       path: vimrc
-    ~/.spacemacs:
-      path: spacemacs
-
-    ~/.xprofile:
-      path: Xorg/xprofile
-    ~/.Xresources:
-      path: Xorg/Xresources
-
-    ~/.urxvt.conf:
-      path: urxvt.conf
-
-    ~/.config/i3:
-      path: i3
-    ~/.config/i3status/config:
-      path: i3status/config
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
