@@ -46,11 +46,9 @@ This function should only modify configuration layer settings."
      groovy
      gtags
      (ibuffer :variables ibuffer-group-buffers-by nil)
-     ;; javascript
      markdown
      neotree
      ;; org
-     java
      parinfer
      (python :variables python-test-runner 'pytest)
      (ranger :variables ranger-override-dired t)
@@ -174,9 +172,7 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(ujelly
-                         spacemacs-light
-                         spacemacs-dark)
+   dotspacemacs-themes '(spacemacs-dark)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
    ;; `all-the-icons', `custom', `vim-powerline' and `vanilla'. The first three
@@ -193,7 +189,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("PragmataPro for Powerline"
+   dotspacemacs-default-font '("Ubuntu Mono"
                                :size 17
                                :weight normal
                                :width normal)
@@ -467,7 +463,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (ujelly-theme yasnippet-snippets yapfify yaml-mode xterm-color ws-butler winum which-key wgrep volatile-highlights vi-tilde-fringe uuidgen use-package toml-mode toc-org theme-changer symon sunshine string-inflection spaceline-all-the-icons solarized-theme smex smeargle shell-pop rvm ruby-tools ruby-test-mode ruby-refactor ruby-hash-syntax rubocop rspec-mode robe restart-emacs request realgud rbenv ranger rake rainbow-delimiters racer pyvenv pytest pyenv-mode py-isort popwin pippel pipenv pip-requirements persp-mode password-generator parinfer paradox overseer org-plus-contrib org-bullets open-junk-file neotree nameless mvn multi-term move-text mmm-mode minitest meghanada maven-test-mode markdown-toc magit-gitflow magit-gh-pulls macrostep lorem-ipsum live-py-mode linum-relative link-hint ivy-xref ivy-rtags ivy-purpose ivy-hydra insert-shebang indent-guide importmagic ibuffer-projectile hy-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-make groovy-mode groovy-imports gradle-mode google-translate google-c-style golden-ratio gitignore-mode github-search github-clone gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gist gh-md ggtags fuzzy font-lock+ flyspell-correct-ivy flycheck-rust flycheck-rtags flycheck-pos-tip flycheck-bashate flx-ido fish-mode fill-column-indicator fasd fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-cleverparens evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help ensime elisp-slime-nav editorconfig dumb-jump disaster diminish diff-hl define-word cython-mode counsel-projectile counsel-gtags company-statistics company-shell company-rtags company-emacs-eclim company-c-headers company-anaconda column-enforce-mode clean-aindent-mode clang-format chruby centered-cursor-mode cargo bundler browse-at-remote auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ac-ispell))))
+    (yasnippet-snippets yapfify yaml-mode xterm-color wgrep ujelly-theme toml-mode smex smeargle shell-pop rvm ruby-tools ruby-test-mode ruby-refactor ruby-hash-syntax rubocop rspec-mode robe realgud test-simple loc-changes load-relative rbenv ranger rake racer pyvenv pytest pyenv-mode py-isort pippel pipenv pip-requirements parinfer mvn multi-term mmm-mode minitest meghanada maven-test-mode markdown-toc markdown-mode magit-gitflow magit-gh-pulls live-py-mode ivy-xref ivy-rtags ivy-purpose ivy-hydra insert-shebang importmagic epc ctable concurrent deferred ibuffer-projectile hy-mode dash-functional groovy-mode groovy-imports gradle-mode google-c-style gitignore-mode github-search github-clone gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gist gh marshal logito pcache ht gh-md ggtags fuzzy flyspell-correct-ivy flyspell-correct flycheck-rust flycheck-rtags flycheck-pos-tip pos-tip flycheck-bashate flycheck fish-mode fasd evil-magit magit magit-popup git-commit ghub let-alist with-editor eshell-z eshell-prompt-extras esh-help ensime sbt-mode scala-mode disaster diff-hl cython-mode counsel-gtags company-statistics company-shell company-rtags rtags company-emacs-eclim eclim company-c-headers company-anaconda company clang-format chruby cargo rust-mode bundler inf-ruby browse-at-remote auto-yasnippet yasnippet auto-dictionary anaconda-mode pythonic ac-ispell auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org symon string-inflection spaceline-all-the-icons restart-emacs request rainbow-delimiters popwin persp-mode pcre2el password-generator paradox overseer org-plus-contrib org-bullets open-junk-file neotree nameless move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio font-lock+ flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-cleverparens evil-args evil-anzu eval-sexp-fu elisp-slime-nav editorconfig dumb-jump diminish define-word counsel-projectile column-enforce-mode clean-aindent-mode centered-cursor-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
