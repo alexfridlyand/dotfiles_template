@@ -3,7 +3,7 @@
     autocrlf = input
 [user]
     name = Alex Fridlyand
-    email = alex.fridlyand@temzix.com
+    email = alex@fridlyand.com
 [apply]
     whitespace = fix
 #[commit]

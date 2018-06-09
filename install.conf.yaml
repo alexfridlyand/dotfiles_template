@@ -13,11 +13,6 @@
 
     ~/.vimrc:
       path: vimrc
-    ~/.spacemacs:
-      path: spacemacs
-
-    ~/.xprofile:
-      path: Xorg/xprofile
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
