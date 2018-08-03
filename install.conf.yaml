@@ -11,8 +11,16 @@
     ~/.gitconfig:
       path: git/gitconfig
 
+    ~/.bash_profile:
+      path: bash_profile
+
     ~/.vimrc:
       path: vimrc
+
+    ~/bin/emacs:
+      path: emacs/emacs
+    ~/bin/ec:
+      path: emacs/ec
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

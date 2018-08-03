@@ -35,8 +35,6 @@ set textwidth=80
 
 syntax on
 
-" turn line numbers on
-set number
 " highlight matching braces
 set showmatch
 " intelligent comments
