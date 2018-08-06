@@ -1,8 +1,13 @@
 ### ALIASES
 
-alias emacs=ec
-alias emacsclient=ec
-alias e=ec
+export ALTERNATE_EDITOR=""
+
+alias e='emacsclient -t'
+alias ec='emacsclient -c -n -e "(select-frame-set-input-focus
+(selected-frame))" > /dev/null'
+
+export EDITOR='e'
+export VISUAL='e'
 
 ### VARS
 
@@ -18,4 +23,3 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 
 # Bazel
 source /usr/local/lib/bazel/bin/bazel-complete.bash
-

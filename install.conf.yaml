@@ -17,10 +17,11 @@
     ~/.vimrc:
       path: vimrc
 
-    ~/bin/emacs:
-      path: emacs/emacs
-    ~/bin/ec:
-      path: emacs/ec
+    ~/.emacs.d/init.el:
+      path: emacs/init.el
+
+    ~/.skhdrc:
+      path: skhdrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
