@@ -22,4 +22,4 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.i
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 
 # Bazel
-source /usr/local/lib/bazel/bin/bazel-complete.bash
+source /usr/local/etc/bash_completion.d
