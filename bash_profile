@@ -20,6 +20,3 @@ export FX_REPO_ROOT=~/clb/fx
 # GCP
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
-
-# Bazel
-source /usr/local/etc/bash_completion.d
