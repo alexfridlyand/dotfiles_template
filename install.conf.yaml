@@ -13,6 +13,8 @@
 
     ~/.bash_profile:
       path: bash_profile
+    ~/.bash_aliases:
+      path: bash_aliases
 
     ~/.vimrc:
       path: vimrc

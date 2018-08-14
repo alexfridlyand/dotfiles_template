@@ -1,17 +1,17 @@
-### ALIASES
+### EDITOR
 
 export ALTERNATE_EDITOR=""
-
-alias e='emacsclient -t'
-alias ec='emacsclient -c -n -e "(select-frame-set-input-focus
-(selected-frame))" > /dev/null'
 
 export EDITOR='e'
 export VISUAL='e'
 
 ### VARS
 
-export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/bin:$HOME/go/bin:$HOME/.cargo/bin:$PATH"
+
+export CB_NLP_TENSORFLOW_SYN_HOST='0.0.0.0'
+export CB_NLP_TENSORFLOW_SYN_PORT=8500
+export CB_NLP_TENSORFLOW_SYN_BATCHSIZE=256
 
 export FX_REPO_ROOT=~/clb/fx
 
