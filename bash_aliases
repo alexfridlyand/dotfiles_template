@@ -14,11 +14,11 @@ alias root='sudo -i'
 alias su='sudo -i'
 
 ## Colorize the ls output ##
-alias ls='ls --color=auto'
+alias ls='ls -G'
 ## Use a long listing format ##
 alias ll='ls -la'
 ## Show hidden files ##
-alias l.='ls -d .* --color=auto'
+alias l.='ls -d .*'
 
 ## get rid of command not found ##
 alias cd..='cd ..'
