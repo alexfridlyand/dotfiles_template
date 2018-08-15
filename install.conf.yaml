@@ -22,5 +22,8 @@
     ~/.skhdrc:
       path: skhdrc
 
+    ~/.terminfo:
+      path: terminfo
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
