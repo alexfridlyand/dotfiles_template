@@ -19,9 +19,6 @@
     ~/.vimrc:
       path: vimrc
 
-    ~/.emacs.d/init.el:
-      path: emacs.d/init.el
-
     ~/.skhdrc:
       path: skhdrc
 
