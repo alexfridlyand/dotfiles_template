@@ -19,7 +19,7 @@ fi
 
 ### VARS
 
-export PATH="$HOME/bin:$HOME/go/bin:$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.emacs.d/bin:$HOME/go/bin:$HOME/.cargo/bin:$PATH"
 
 export CB_NLP_TENSORFLOW_SYN_HOST='0.0.0.0'
 export CB_NLP_TENSORFLOW_SYN_PORT=8500
