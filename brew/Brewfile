@@ -1,0 +1,21 @@
+tap "homebrew/cask-fonts"
+tap "d12frosted/emacs-plus"
+
+brew "git"
+brew "ripgrep"
+brew "aspell", args: ["with-all-langs"]
+brew "coreutils"
+brew "ack"
+brew "tree"
+brew "wget"
+
+brew "zsh"
+brew "zsh-completions"
+
+cask "font-input"
+
+brew "emacs-plus", args: ["without-spacemacs-icon"]
+
+brew "bazel"
+brew "protobuf"
+brew "grpc"

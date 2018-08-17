@@ -1,0 +1,10 @@
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+### EDITOR
+
+export ALTERNATE_EDITOR=""
+
+export EDITOR='e'
+export VISUAL='e'

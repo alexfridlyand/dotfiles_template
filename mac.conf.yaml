@@ -5,6 +5,13 @@
 
 - clean: [ '~', '~/.config' ]
 
+- shell:
+    - [defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/terminal"]
+    - [defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true]
+
+- brewfile:
+    - brew/Brewfile
+
 - link:
     ~/.skhdrc:
       path: key/skhdrc
@@ -14,7 +21,3 @@
 
     ~/Library/Application Support/iTerm2/DynamicProfiles/iterm.json:
       path: terminal/iterm.json
-
-- shell:
-    - [defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/terminal"]
-    - [defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true]
