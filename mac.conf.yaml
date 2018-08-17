@@ -6,8 +6,15 @@
 - clean: [ '~', '~/.config' ]
 
 - link:
+    ~/.skhdrc:
+      path: key/skhdrc
+
+    ~/.terminfo:
+      path: terminal/terminfo
+
     ~/Library/Application Support/iTerm2/DynamicProfiles/iterm.json:
-      path: iterm.json
+      path: terminal/iterm.json
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/terminal"]
+    - [defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true]

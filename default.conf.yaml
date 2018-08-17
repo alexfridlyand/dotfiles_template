@@ -12,18 +12,12 @@
       path: git/gitconfig
 
     ~/.bash_profile:
-      path: bash_profile
+      path: bash/bash_profile
     ~/.bash_aliases:
-      path: bash_aliases
+      path: bash/bash_aliases
 
     ~/.vimrc:
-      path: vimrc
-
-    ~/.skhdrc:
-      path: skhdrc
-
-    ~/.terminfo:
-      path: terminfo
+      path: vim/vimrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
