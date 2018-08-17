@@ -1727,9 +1727,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 188 609 401 0 0 1280 800 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>273 212 796 473 0 0 1280 800 </string>
+	<string>273 212 796 486 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>35 0 650 476 0 0 1280 800 </string>
+	<string>35 0 650 476 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>542 255 650 427 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2507,6 +2507,8 @@
 		<string>0006</string>
 		<string>0007</string>
 	</array>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
 	<key>PasteTabToStringTabStopSize</key>
@@ -2545,9 +2547,9 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/alexfridlyand/dotfiles/terminal</string>
+	<string>~/dotfiles/terminal</string>
 	<key>PromptOnQuit</key>
-	<true/>
+	<false/>
 	<key>SGTRecentFileSearches</key>
 	<array>
 		<dict>
@@ -3469,7 +3471,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.0</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
