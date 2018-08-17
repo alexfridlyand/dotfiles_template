@@ -27,3 +27,6 @@ export CB_NLP_TENSORFLOW_SYN_BATCHSIZE=256
 
 export FX_REPO_ROOT=~/clb/fx
 
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
