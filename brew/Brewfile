@@ -16,6 +16,8 @@ cask "font-input"
 
 brew "emacs-plus", args: ["without-spacemacs-icon"]
 
+cask "java"
+
 brew "bazel"
 brew "protobuf"
 brew "grpc"
