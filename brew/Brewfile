@@ -16,7 +16,7 @@ cask "font-input"
 
 brew "emacs-plus", args: ["without-spacemacs-icon"]
 
-cask "java"
+cask "java8"
 
 brew "bazel"
 brew "protobuf"
