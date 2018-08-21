@@ -17,12 +17,11 @@
       path: shell/bash_aliases
     ~/.zshrc:
       path: shell/zshrc
+    ~/.zplugrc:
+      path: shell/zplugrc
 
     ~/.vimrc:
       path: vim/vimrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - ["sh -c \"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"", Installing oh-my-zsh]
-  - ["git -C ~/.oh-my-zsh/custom/themes/powerlevel9k pull || git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k", Installing Powerlevel theme]
-  - ["git -C ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting pull || git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting", Installing zsh-syntax-highlighting]
