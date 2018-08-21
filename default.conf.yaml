@@ -11,8 +11,6 @@
     ~/.gitconfig:
       path: git/gitconfig
 
-    ~/.bash_profile:
-      path: shell/bash_profile
     ~/.aliases:
       path: shell/aliases
     ~/.zshrc:
