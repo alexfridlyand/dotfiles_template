@@ -1,3 +1,6 @@
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 [ -f ~/.zplugrc ] && source ~/.zplugrc
+
+# load aliases
+[[ -f ~/.aliases ]] && source ~/.aliases

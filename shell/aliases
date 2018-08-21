@@ -1,0 +1,34 @@
+# vim: ft=sh
+
+# Unix
+alias c='clear'
+alias h='history'
+alias j='jobs -l'
+alias l="ls -lah"
+alias ll="ls -lah"
+alias ls="gls -F -G --color --group-directories-first"
+alias l.='ls -d .*'
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias rmrf='rm -rf'
+alias less='less -r'
+alias diff='colordiff'
+alias mount='mount |column -t'
+alias reboot='sudo reboot'
+alias root='sudo -i'
+alias su='sudo -i'
+
+# vim
+alias vim='nvim'
+alias e="$EDITOR"
+alias v="$VISUAL"
+alias sp="nvr -cc split"
+alias vs="nvr -cc vsplit"
+alias tree="tree -C"
+alias :qa="nvr -cc ':qa'"
+alias :wq="nvr -cc ':wq'"
+
+# emacs 
+##alias em='emacsclient -t'
+##alias ec='emacsclient -c -n -e "(select-frame-set-input-focus
+##(selected-frame))" > /dev/null'

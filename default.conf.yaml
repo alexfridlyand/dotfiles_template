@@ -13,8 +13,8 @@
 
     ~/.bash_profile:
       path: shell/bash_profile
-    ~/.bash_aliases:
-      path: shell/bash_aliases
+    ~/.aliases:
+      path: shell/aliases
     ~/.zshrc:
       path: shell/zshrc
     ~/.zplugrc:
