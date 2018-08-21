@@ -15,6 +15,7 @@ brew "zplug"
 cask "font-input"
 
 brew "emacs-plus", args: ["without-spacemacs-icon"]
+brew "neovim"
 
 cask "java8"
 
