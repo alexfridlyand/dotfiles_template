@@ -1,0 +1,19 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- pacman:
+  - git
+  - ripgrep
+  - ack
+
+  - zsh
+
+  - neovim
+
+  - google-cloud-sdk
+  - kubectl
+
+- shell:
+  - ["curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh || true"]

@@ -1,7 +1,7 @@
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=~/.zplug
 source $ZPLUG_HOME/init.zsh
 [ -f ~/.zplugrc ] && source ~/.zplugrc
 

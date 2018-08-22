@@ -21,8 +21,5 @@
     ~/.vimrc:
       path: vim/vimrc
 
-    /usr/local/bin/kubectl:
-      path: /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/kubectl
-
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
