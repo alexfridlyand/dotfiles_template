@@ -13,6 +13,9 @@
 - brewfile:
     - brew/Brewfile
 
+- shell:
+    - [gcloud components install kubectl]
+
 - link:
     ~/.skhdrc:
       path: key/skhdrc

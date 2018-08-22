@@ -22,3 +22,5 @@ cask "java8"
 brew "bazel"
 brew "protobuf"
 brew "grpc"
+
+cask "google-cloud-sdk"
