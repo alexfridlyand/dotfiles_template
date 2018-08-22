@@ -25,3 +25,6 @@
 
     ~/Library/Application Support/iTerm2/DynamicProfiles/iterm.json:
       path: terminal/iterm.json
+
+    ~/.zplug:
+      path: /usr/local/opt/zplug
